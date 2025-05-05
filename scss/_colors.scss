@@ -1,0 +1,96 @@
+//BASE COLORS
+:root{
+    --color-dark: #090909;
+    --color-light: #f9f9f9;
+    --color-fire: #b62020;
+    --color-chili: #D73626;
+    --color-cinnabar: #F04D23;
+}
+
+//SVG COLORS
+@mixin svg-dark{
+    filter: invert(0%) sepia(7%) saturate(2656%) hue-rotate(14deg) brightness(96%) contrast(93%);
+}
+
+@mixin svg-light{
+    filter: invert(98%) sepia(5%) saturate(847%) hue-rotate(227deg) brightness(116%) contrast(95%);
+}
+
+@mixin svg-fire{
+    filter: invert(18%) sepia(28%) saturate(5187%) hue-rotate(339deg) brightness(118%) contrast(107%);
+}
+
+@mixin svg-cinnabar{
+    filter: invert(46%) sepia(65%) saturate(6691%) hue-rotate(352deg) brightness(110%) contrast(88%);
+}
+
+@mixin svg-chili{
+    filter: invert(27%) sepia(46%) saturate(2809%) hue-rotate(342deg) brightness(99%) contrast(100%);
+}
+
+.svg-light{
+    @include svg-light;
+}
+
+.svg-dark{
+    @include svg-dark;
+}
+
+.svg-fire{
+    @include svg-fire;
+}
+
+.svg-cinnabar{
+    @include svg-cinnabar;
+}
+
+.svg-chili{
+    @include svg-chili;
+}
+
+//BACKGROUND COLORS
+.bg-light{
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.bg-dark{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+
+    .link, .mobile-link{
+        color: var(--color-light);
+    }
+}
+
+.bg-fire{
+    background-color: var(--color-fire);
+    color: var(--color-light);
+
+    .link, .mobile-link{
+        color: var(--color-light);
+    }
+}
+
+.bg-chili{
+    background-color: var(--color-chili);
+    color: var(--color-light);
+
+    .link, .mobile-link{
+        color: var(--color-light);
+    }
+}
+
+.bg-cinnabar-dark{
+    background-color: var(--color-cinnabar);
+    color: var(--color-dark);
+}
+
+.bg-cinnabar-light{
+    background-color: var(--color-cinnabar);
+    color: var(--color-light);
+
+    .link, .mobile-link{
+        color: var(--color-light);
+    }
+}

@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100dvh;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+
+.image{
+    display: block;
+    max-width: 100%;
+    height: auto;  
+    object-fit: cover;
+}
+
+.rounded-image{
+    border-radius: 30px !important;
+}
+

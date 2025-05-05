@@ -1,0 +1,161 @@
+//LINK STYLING
+.link{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: color 0.25s ease-in-out;
+
+    &:hover{
+        color: var(--color-cinnabar);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-cinnabar);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.25s ease-in-out;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+    }
+
+    i{
+        margin-left: .5rem;
+        font-size: .9rem;
+    }
+}
+
+.mobile-link{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-dark);
+}
+
+//BUTTON STYLING
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 8px 30px;
+    font-size: 18px;
+    transition: all 0.25s ease-in-out;
+    text-decoration: none;
+
+    i{
+        font-size: 1rem;
+        margin-left: .5rem;
+    }
+}
+
+.btn-fire{
+    background-color: var(--color-fire);
+    border: 1px solid var(--color-fire);
+    color: var(--color-light);
+
+    &:hover{
+        background-color: var(--color-cinnabar);
+        border-color: var(--color-cinnabar);
+        color: var(--color-dark);
+
+        .svg-icon{
+            @include svg-dark;
+        }
+    }
+}
+
+.btn-chili{
+    background-color: var(--color-chili);
+    border: 1px solid var(--color-chili);
+    color: var(--color-light);
+
+    &:hover{
+        background-color: var(--color-cinnabar);
+        border-color: var(--color-cinnabar);
+        color: var(--color-dark);
+
+        .svg-icon{
+            @include svg-dark;
+        }
+    }
+}
+
+.btn-cinnabar{
+    background-color: var(--color-cinnabar);
+    border: 1px solid var(--color-cinnabar);
+    color: var(--color-light);
+
+    &:hover{
+        background-color: var(--color-light);
+        border-color: var(--color-light);
+        color: var(--color-dark);
+
+        .svg-icon{
+            @include svg-dark;
+        }
+    }
+}
+
+.btn-light{
+    background-color: var(--color-light);
+    border: 1px solid var(--color-dark);
+    color: var(--color-cinnabar);
+
+    &:hover{
+        background-color: var(--color-dark);
+        border-color: var(--color-light);
+        color: var(--color-light);
+        
+        .svg-icon{
+            @include svg-light;
+        }
+    }
+}
+
+.btn-dark{
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+    color: var(--color-cinnabar);
+
+    &:hover{
+        background-color: transparent;
+        border-color: var(--color-dark);
+        color: var(--color-dark);
+
+        .svg-icon{
+            @include svg-dark;
+        }
+    }
+}
+
+//ORANGE HEADER STYLING
+// .btn-dark{
+//     background-color: var(--color-dark);
+//     border: 1px solid var(--color-dark);
+//     color: var(--color-light);
+
+//     &:hover{
+//         background-color: transparent;
+//         border-color: var(--color-light);
+//         color: var(--color-light);
+
+//         .svg-icon{
+//             @include svg-light;
+//         }
+//     }
+// }

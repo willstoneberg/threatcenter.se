@@ -1,0 +1,15 @@
+.home-video-section{
+    padding: 0 !important;
+    margin: 0 !important;
+
+    .showcase-video{
+        display: block;
+        width: 100%;
+        height: auto;
+
+        @include mobile{
+            height: 100dvh;
+            object-fit: cover;
+        }
+    }
+}

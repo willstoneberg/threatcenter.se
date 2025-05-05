@@ -1,0 +1,18 @@
+//COMPONENT IMPORTS
+@import './scss/mixins';
+@import './scss/base';
+@import './scss/typography';
+@import './scss/colors';
+@import './scss/buttons';
+@import './scss/components';
+
+//SECTION IMPORTS
+@import './scss/sections/header';
+@import './scss/sections/footer';
+
+//HOME SECTIONS
+@import './scss/sections/home/hero-section';
+@import './scss/sections/home/information-section';
+@import './scss/sections/home/partners-section';
+@import './scss/sections/home/video-section';
+@import './scss/sections/home/contact-section';

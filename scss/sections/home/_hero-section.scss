@@ -1,0 +1,91 @@
+.home-hero-section{
+
+    .container{
+
+        .above-the-fold{
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+
+            @include tablet{
+                flex-direction: row;
+                align-items: start;
+            }
+            
+            .fold-container{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                text-decoration: none;
+                width: 100%;
+                height: auto;
+                border-radius: 30px;
+                padding: 2rem;
+                gap: 1rem;
+                transition: background-color .25s ease-in-out, color .25s ease-in-out;
+
+                @include tablet{
+                    width: 100%;
+                    height: 38rem;
+                }
+
+                @include desktop{
+                    width: 22rem;
+                    height: 30rem;
+                }
+
+                &:nth-child(1){
+                    
+                    .fold-heading{
+                        font-size: 25px;
+                    }
+
+                    &:hover{
+                        background-color: var(--color-cinnabar);
+                        color: var(--color-dark);
+    
+                        .svg-icon{
+                            filter: invert(0%) sepia(7%) saturate(2656%) hue-rotate(14deg) brightness(96%) contrast(93%);
+                        }
+                    }
+
+                }
+
+                &:nth-child(2){
+
+                    &:hover{
+                        background-color: var(--color-cinnabar);
+                        color: var(--color-light);
+    
+                        .svg-icon{
+                            filter: invert(98%) sepia(5%) saturate(847%) hue-rotate(227deg) brightness(116%) contrast(95%);
+                        }
+                    }
+                }
+
+                
+                &:nth-child(3){
+                    .fold-heading{
+                        font-size: 25px;
+                    }
+
+                    &:hover{
+                        background-color: var(--color-cinnabar);
+                        color: var(--color-light);
+    
+                        .svg-icon{
+                            filter: invert(98%) sepia(5%) saturate(847%) hue-rotate(227deg) brightness(116%) contrast(95%);
+                        }
+                    }
+                }
+
+                .fold-heading{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
