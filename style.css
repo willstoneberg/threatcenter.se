@@ -48,13 +48,13 @@ html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3,
   font-weight: 700;
 }
 html h1, body h1 {
-  font-size: 60px;
-  line-height: 4rem;
+  font-size: 45px;
+  line-height: 3.5rem;
 }
 @media (min-width: 768px) {
   html h1, body h1 {
-    font-size: 80px;
-    line-height: 4.5rem;
+    font-size: 55px;
+    line-height: 4rem;
   }
 }
 html h2, body h2 {
@@ -393,6 +393,10 @@ html h6, body h6 {
 .reveal.active {
   transform: translateY(0px);
   opacity: 1;
+}
+
+.cap {
+  text-transform: uppercase;
 }
 
 header {
