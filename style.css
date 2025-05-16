@@ -245,6 +245,20 @@ html h6, body h6 {
   filter: invert(0%) sepia(7%) saturate(2656%) hue-rotate(14deg) brightness(96%) contrast(93%);
 }
 
+.btn-cinnabar-about {
+  background-color: var(--color-cinnabar);
+  border: 1px solid var(--color-cinnabar);
+  color: var(--color-light);
+}
+.btn-cinnabar-about:hover {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+  color: var(--color-light);
+}
+.btn-cinnabar-about:hover .svg-icon {
+  filter: invert(98%) sepia(5%) saturate(847%) hue-rotate(227deg) brightness(116%) contrast(95%);
+}
+
 .btn-light {
   background-color: var(--color-light);
   border: 1px solid var(--color-dark);
